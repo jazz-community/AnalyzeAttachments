@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+  <Appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %msg%n"/>
+    </Console>
+    <RollingFile name="RollingFile" fileName="logs/AnalyzeAttachements.log" filePattern="logs/AnalyzeAttachements(%i).log">
+      <PatternLayout>
+        <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+      </PatternLayout>
+      <Policies>
+        <OnStartupTriggeringPolicy />
+        <SizeBasedTriggeringPolicy size="20 MB" />
+      </Policies>
+    </RollingFile>
+        <RollingFile  name="ErrorRollingFileLog" fileName="logs/AnalyzeAttachementsError.log" filePattern="logs/AnalyzeAttachementsError(%i).log">
+      <PatternLayout>
+        <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+      </PatternLayout>
+      <Policies>
+        <OnStartupTriggeringPolicy />
+        <SizeBasedTriggeringPolicy size="20 MB" />
+      </Policies>
+    </RollingFile>
+  </Appenders>
+  <Loggers>
+    <Root level="ALL">
+      <AppenderRef ref="Console" level="DEBUG"/>
+      <AppenderRef ref="RollingFile" level="INFO"/>
+      <AppenderRef ref="ErrorRollingFileLog" level="ERROR"/>
+    </Root>
+  </Loggers>
+</Configuration>
