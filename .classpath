@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="test">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/PlainJavaAPI-6.0.2"/>
+	<classpathentry kind="lib" path="C:/GitRepos/AnalyzeAttachments/external/alm-tools-utilities-2.1.3.jar"/>
+	<classpathentry kind="lib" path="C:/GitRepos/AnalyzeAttachments/external/annotations-2.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/GitRepos/AnalyzeAttachments/external/commons-cli-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/GitRepos/AnalyzeAttachments/external/guava-15.0.jar"/>
+	<classpathentry kind="lib" path="C:/GitRepos/AnalyzeAttachments/external/javassist-3.19.0-GA.jar"/>
+	<classpathentry kind="lib" path="C:/GitRepos/AnalyzeAttachments/external/jcommander-1.48.jar"/>
+	<classpathentry kind="lib" path="C:/GitRepos/AnalyzeAttachments/external/log4j-api-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/GitRepos/AnalyzeAttachments/external/log4j-core-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/GitRepos/AnalyzeAttachments/external/reflections-0.9.10.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
